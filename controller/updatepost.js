@@ -26,7 +26,7 @@ async function updateBlogPost(req, res) {
       status: "fail",
       message: error.message,
     });
-  }
-}
+  };
+};
 
 module.exports = updateBlogPost;

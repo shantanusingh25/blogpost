@@ -5,6 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3000
 const db_setup = require("./db/setup");
 const bp_router = require("./routes/blogposts.route")
+const logger = require("./middlewares/universal-log.log")
 // setting up the database
 db_setup();
 
@@ -16,10 +17,10 @@ app.use(express.urlencoded({extended : true}));
 app.use(express.json());
 
 // routing
-app.get("/" , function(req , res){
+app.get("/" , logger , function(req , res){
     res.status(200).send("Welcome , this is blogpost app spi ,(testing).");
 })
-app.use("/blog" , bp_router);
+app.use("/blog" , logger , bp_router);
 
 app.listen(PORT , function(){
     console.log("The server is running on port " , PORT , `and the direct link is http://localhost:${PORT}`);

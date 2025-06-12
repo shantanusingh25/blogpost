@@ -1,0 +1,27 @@
+{
+  "name": "blogposts",
+  "version": "1.0.0",
+  "description": "This is a basic application backend created with expressJS Nodejs Moongse and MongoDb for getting my foundations clear on backend topics basics and github",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "blogpost"
+  },
+  "keywords": [
+    "blogposts",
+    "blogs",
+    "post"
+  ],
+  "author": "Shantnau Singh",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^5.0.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1",
+    "path": "^0.12.7",
+    "url": "^0.11.4"
+  }
+}

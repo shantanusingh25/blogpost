@@ -12,4 +12,4 @@ async function getBlogPost(req , res){
     };
 };
 
-module.exports = deleteBlogPost;
+module.exports = getBlogPost;

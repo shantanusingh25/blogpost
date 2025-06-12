@@ -16,6 +16,9 @@ app.use(express.urlencoded({extended : true}));
 app.use(express.json());
 
 // routing
+app.get("/" , function(req , res){
+    res.status(200).send("Welcome , this is blogpost app spi ,(testing).");
+})
 app.use("/blog" , bp_router);
 
 app.listen(PORT , function(){
